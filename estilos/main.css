@@ -1,0 +1,81 @@
+html{
+    font-size: 16px;
+}
+/*Voy usar mediasquery para hacer adaptable 
+la letra a un dispositivo diferente */
+
+@media screen and(max-width:400px){ 
+    html{
+        font-size: 9px;
+    }
+} 
+    html,body{
+        height: 100%;
+    }
+    body{
+        background-color: rgb(83, 233, 168);
+        font-family: "Pacifico display";
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.889;
+        color: rgb(71, 95, 107); 
+        margin: 0;
+        padding: 12px;
+    }
+    /*Estilos a los links */
+    
+    a{
+        color: darkred;
+        transition: all 0.3s ease-in-out;
+    }   
+
+    a:hover,
+    /* cunado coloca el mouse el color */
+    a:focus,
+    /* da como un brillo que no se nota tanto */
+    a:active{
+        color: darkgoldenrod;
+    }
+
+    a:hover,
+    a:active{
+        outline: 0;
+    }
+    /*TIPOGRAFIA*/
+    h1,h2,h3,h4,h5,h6 .h1,.h2,.h3,.h4,.h5,.h6{
+        font-family: "Franck Ruh1 libre", serif;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4{
+        margin-top: 6rem;
+         /*margen hacia abajo */
+
+        margin-bottom: 16rem;
+         /*margen hacia arriba */
+
+    }
+
+    @media screen and (max-width:600px) {
+
+        h1,
+        .h1,
+        h2,
+        .h2,
+        h3,
+        .h3,
+        h4,
+        .h4 {
+            margin-top: 6rem;
+            /*margen hacia arriba */
+            }
+    }
