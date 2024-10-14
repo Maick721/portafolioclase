@@ -1,54 +1,89 @@
-html{
+html {
     font-size: 16px;
 }
+
 /*Voy usar mediasquery para hacer adaptable 
 la letra a un dispositivo diferente */
 
-@media screen and(max-width:400px){ 
-    html{
+@media screen and(max-width:400px) {
+    html {
         font-size: 9px;
     }
-} 
-    html,body{
-        height: 100%;
-    }
-    body{
-        background-color: rgb(83, 233, 168);
-        font-family: "Pacifico display";
-        font-size: 1.7rem;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 1.889;
-        color: rgb(71, 95, 107); 
-        margin: 0;
-        padding: 12px;
-    }
-    /*Estilos a los links */
-    
-    a{
-        color: darkred;
-        transition: all 0.3s ease-in-out;
-    }   
+}
 
-    a:hover,
-    /* cunado coloca el mouse el color */
-    a:focus,
-    /* da como un brillo que no se nota tanto */
-    a:active{
-        color: darkgoldenrod;
-    }
+html,
+body {
+    height: 100%;
+}
 
-    a:hover,
-    a:active{
-        outline: 0;
-    }
-    /*TIPOGRAFIA*/
-    h1,h2,h3,h4,h5,h6 .h1,.h2,.h3,.h4,.h5,.h6{
-        font-family: "Franck Ruh1 libre", serif;
-        font-weight: 500;
-        font-style: normal;
-        color: black;
-    }
+body {
+    background-color: rgb(83, 233, 168);
+    font-family: "Pacifico display";
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.889;
+    color: rgb(62, 6, 140);
+    margin: 0;
+    padding: 12px;
+}
+
+/*Estilos a los links */
+
+a {
+    color: darkred;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+/* cuando coloca el mouse el color */
+a:focus,
+/* da como un brillo que no se nota tanto */
+a:active {
+    color: darkgoldenrod;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*TIPOGRAFIA*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Franck Ruh1 libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    margin-top: 6rem;
+    /*margen hacia abajo */
+
+    margin-bottom: 16rem;
+    /*margen hacia arriba */
+
+}
+
+@media screen and (max-width:600px) {
+
     h1,
     .h1,
     h2,
@@ -56,26 +91,80 @@ la letra a un dispositivo diferente */
     h3,
     .h3,
     h4,
-    .h4{
+    .h4 {
         margin-top: 6rem;
-         /*margen hacia abajo */
-
-        margin-bottom: 16rem;
-         /*margen hacia arriba */
-
+        /*margen hacia arriba */
     }
+}
 
-    @media screen and (max-width:600px) {
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem;
+}
 
-        h1,
-        .h1,
-        h2,
-        .h2,
-        h3,
-        .h3,
-        h4,
-        .h4 {
-            margin-top: 6rem;
-            /*margen hacia arriba */
-            }
-    }
+/*Estilos del header */
+.s-header {
+    position: absolute;
+    top: 2rem;
+    left: 0px;
+    width: 100%;
+    border: 1px solid red;
+    height: 78px;
+    text-align: center;
+}
+
+.s-header.sticky {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-log {
+    display: inline-block;
+    margin: 6px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+
+.header-log a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s;
+}
+
+.header-log img {
+    width: 132px;
+    height: 36px;
+    margin: 0;
+}
+
+.header-nav-wrap {
+    display: inline-block;
+
+}
+
+.header-nav-wrap ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 18px;
+
+}
+
+.header-nav-wrap li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+.header-nav-wrap li a {
+    display: block;
+    line-height: calc(78px - (78px*2));
+}
